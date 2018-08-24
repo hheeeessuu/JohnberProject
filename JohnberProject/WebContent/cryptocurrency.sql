@@ -38,18 +38,18 @@ create table upbit (
 );
   
 create table member (
-  userid			      VARCHAR2(10)	PRIMARY KEY,
-  passwd			      VARCHAR2(20)	NOT NULL,
-  username 			    VARCHAR2(10)	NOT NULL,
-  postcode			    VARCHAR2(6)		NOT NULL,
-  primary_address	  VARCHAR2(500)	NOT NULL,
+  userid			VARCHAR2(10)	PRIMARY KEY,
+  passwd			VARCHAR2(20)	NOT NULL,
+  username 			VARCHAR2(10)	NOT NULL,
+  postcode			VARCHAR2(6)		NOT NULL,
+  primary_address	VARCHAR2(500)	NOT NULL,
   detailed_address	VARCHAR2(500)	NOT NULL,
-  phone				      VARCHAR2(11)	NOT NULL,
-  email				      VARCHAR2(40)	NOT NULL
+  phone				VARCHAR2(11)	NOT NULL,
+  email				VARCHAR2(40)	NOT NULL
 );
   
 create table interest_item (
-  userid 	  VARCHAR2(10) NOT NULL,
+  userid 	VARCHAR2(10) NOT NULL,
   currency 	VARCHAR2(10) NOT NULL,
   CONSTRAINT pk_interest_item PRIMARY KEY (userid, currency)
 );
